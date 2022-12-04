@@ -9,6 +9,7 @@ public class DocSoThanhChu {
             switch (number) {
                 case "0":
                     System.out.println("zero");
+                    break;
                 case "1":
                     System.out.println("one");
                     break;
@@ -45,6 +46,7 @@ public class DocSoThanhChu {
                 switch (number) {
                     case "10":
                         System.out.println("ten");
+                        break;
                     case "11":
                         System.out.println("eleven");
                         break;
@@ -77,6 +79,7 @@ public class DocSoThanhChu {
                 switch (number.substring(0, 1)) {
                     case "2":
                         System.out.print("twenty-");
+                        break;
                     case "3":
                         System.out.print("thirty-");
                         break;
@@ -102,6 +105,7 @@ public class DocSoThanhChu {
                 switch (number.substring(1)) {
                     case "0":
                         System.out.print("");
+                        break;
                     case "1":
                         System.out.print("one");
                         break;
@@ -131,41 +135,41 @@ public class DocSoThanhChu {
                         break;
                 }
             }
-        }
-        else {
-            switch (number.charAt(0)){
+        } else {
+            switch (number.charAt(0)) {
                 case '1':
-                    System.out.print("One hundred");
+                    System.out.print("One hundred ");
                     break;
                 case '2':
-                    System.out.print("Two hundred");
+                    System.out.print("Two hundred ");
                     break;
                 case '3':
-                    System.out.print("Three hundred");
+                    System.out.print("Three hundred ");
                     break;
                 case '4':
-                    System.out.print("Four hundred");
+                    System.out.print("Four hundred ");
                     break;
                 case '5':
-                    System.out.print("Five hundred");
+                    System.out.print("Five hundred ");
                     break;
                 case '6':
-                    System.out.print("Six hundred");
+                    System.out.print("Six hundred ");
                     break;
                 case '7':
-                    System.out.print("Seven hundred");
+                    System.out.print("Seven hundred ");
                     break;
                 case '8':
-                    System.out.print("Eight hundred");
+                    System.out.print("Eight hundred ");
                     break;
                 case '9':
-                    System.out.print("Nine hundred");
+                    System.out.print("Nine hundred ");
                     break;
             }
-            if(Integer.parseInt(String.valueOf(number.charAt(1)))==0) {
+            if (Integer.parseInt(String.valueOf(number.charAt(1))) == 0) {
                 switch (number.charAt(2)) {
                     case '0':
                         System.out.println("");
+                        break;
                     case '1':
                         System.out.println("one");
                         break;
@@ -194,11 +198,11 @@ public class DocSoThanhChu {
                         System.out.println("nine");
                         break;
                 }
-            }
-            else if(Integer.parseInt(String.valueOf(number.charAt(1)))==1){
-                switch (number.charAt(2)){
+            } else if (Integer.parseInt(String.valueOf(number.charAt(1))) == 1) {
+                switch (number.charAt(2)) {
                     case '0':
                         System.out.print("ten");
+                        break;
                     case '1':
                         System.out.print("eleven");
                         break;
@@ -225,6 +229,65 @@ public class DocSoThanhChu {
                         break;
                     case '9':
                         System.out.print("nineteen");
+                        break;
+                }
+            } else {
+                switch (number.charAt(1)) {
+                    case '2':
+                        System.out.print("twenty-");
+                        break;
+                    case '3':
+                        System.out.print("thirty-");
+                        break;
+                    case '4':
+                        System.out.print("forty-");
+                        break;
+                    case '5':
+                        System.out.print("fifty-");
+                        break;
+                    case '6':
+                        System.out.print("sixty-");
+                        break;
+                    case '7':
+                        System.out.print("seventy-");
+                        break;
+                    case '8':
+                        System.out.print("eighty-");
+                        break;
+                    case '9':
+                        System.out.print("ninety-");
+                        break;
+                }
+                switch (number.charAt(2)) {
+                    case '0':
+                        System.out.println("");
+                        break;
+                    case '1':
+                        System.out.println("one");
+                        break;
+                    case '2':
+                        System.out.println("two");
+                        break;
+                    case '3':
+                        System.out.println("three");
+                        break;
+                    case '4':
+                        System.out.println("four");
+                        break;
+                    case '5':
+                        System.out.println("five");
+                        break;
+                    case '6':
+                        System.out.println("six");
+                        break;
+                    case '7':
+                        System.out.println("seven");
+                        break;
+                    case '8':
+                        System.out.println("eight");
+                        break;
+                    case '9':
+                        System.out.println("nine");
                         break;
                 }
             }
