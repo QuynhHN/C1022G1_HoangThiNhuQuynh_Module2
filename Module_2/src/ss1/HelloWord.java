@@ -1,3 +1,5 @@
+package ss1;
+
 import java.util.Scanner;
 
 public class HelloWord {
