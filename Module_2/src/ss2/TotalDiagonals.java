@@ -23,7 +23,7 @@ public class TotalDiagonals {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i][i];
         }
-        System.out.println(sum);
+        System.out.println("Tổng các số ở đường chéo chính: " +sum);
 
     }
 }
