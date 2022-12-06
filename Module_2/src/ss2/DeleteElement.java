@@ -25,7 +25,6 @@ public class DeleteElement {
                 arr[arr.length - 1] = 0;
                 i--;
             }
-
         }
         System.out.println(Arrays.toString(arr));
     }
