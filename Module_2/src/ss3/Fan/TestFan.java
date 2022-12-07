@@ -1,4 +1,6 @@
-package ss3;
+package ss3.Fan;
+
+import ss3.Fan.Fan;
 
 public class TestFan {
     public static void main(String[] args) {

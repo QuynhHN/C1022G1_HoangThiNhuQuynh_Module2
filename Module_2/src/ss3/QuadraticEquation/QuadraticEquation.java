@@ -1,4 +1,4 @@
-package ss3;
+package ss3.QuadraticEquation;
 
 public class QuadraticEquation {
     private double a;

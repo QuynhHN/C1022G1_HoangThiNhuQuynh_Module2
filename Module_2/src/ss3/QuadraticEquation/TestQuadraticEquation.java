@@ -1,4 +1,6 @@
-package ss3;
+package ss3.QuadraticEquation;
+
+import ss3.QuadraticEquation.QuadraticEquation;
 
 import java.util.Scanner;
 

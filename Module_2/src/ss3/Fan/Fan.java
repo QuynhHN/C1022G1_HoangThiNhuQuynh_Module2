@@ -1,4 +1,4 @@
-package ss3;
+package ss3.Fan;
 
 public class Fan {
     final int slow = 1;
