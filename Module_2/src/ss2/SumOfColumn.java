@@ -24,12 +24,19 @@ public class SumOfColumn {
         }
         System.out.println();
         int sum = 0;
-        System.out.println("Nhập vào số cột cần tính");
-        int colCalculate = Integer.parseInt(sc.nextLine());
+        int colCalculate;
+        do {
+            System.out.println("Nhập vào số cột cần tính");
+            colCalculate = Integer.parseInt(sc.nextLine());
+        } while (colCalculate < 0 || colCalculate > column - 1);
+
+
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i][colCalculate];
         }
         System.out.println("Tổng các phần tử trong một mảng:" + sum);
+
+
     }
 }
 
