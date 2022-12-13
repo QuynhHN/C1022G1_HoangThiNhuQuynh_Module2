@@ -16,6 +16,7 @@ public class Circle extends Geometry {
         this.radius = radius;
     }
 
+    @Override
     public double getArea() {
         return Math.pow(this.radius, 2) * Math.PI;
     }

@@ -16,6 +16,7 @@ public class Square extends Geometry {
         this.edge = edge;
     }
 
+    @Override
     public double getArea() {
         return Math.pow(this.edge, 2);
     }

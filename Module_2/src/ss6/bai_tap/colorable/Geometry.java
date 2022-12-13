@@ -1,8 +1,8 @@
 package ss6.bai_tap.colorable;
 
-public class Geometry implements IColorable {
+public abstract class Geometry implements IColorable {
     private String color = "white";
-    private boolean filler= true;
+    private boolean filler = true;
 
     public Geometry(String color, boolean filler) {
         this.color = color;
@@ -25,6 +25,8 @@ public class Geometry implements IColorable {
         this.filler = filler;
     }
 
+    public abstract double getArea();
+
     @Override
     public void howToColor() {
 
@@ -34,7 +36,8 @@ public class Geometry implements IColorable {
     public String toString() {
         return "Geometry{" +
                 "color='" + color + '\'' +
-                ", filler=" + filler +
+                ", filler=" + filler + getArea() +
                 '}';
     }
+
 }
