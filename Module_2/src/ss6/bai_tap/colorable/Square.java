@@ -1,6 +1,6 @@
 package ss6.bai_tap.colorable;
 
-public class Square extends Geometry implements IColorable {
+public class Square extends Geometry {
     private double edge;
 
     public Square(String color, boolean filler, double edge) {
