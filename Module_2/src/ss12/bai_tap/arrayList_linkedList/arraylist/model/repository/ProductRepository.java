@@ -9,6 +9,7 @@ import java.util.Objects;
 
 public class ProductRepository implements IProductRepository {
     private static List<Product> productList = new ArrayList<>();
+
     static {
         productList.add(new Product(1, "Táo", 10000));
         productList.add(new Product(2, "Cam", 20000));
@@ -21,10 +22,10 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public void updateProduct(int id,Product product) {
+    public void updateProduct(Product product) {
         for (int i = 0; i < productList.size(); i++) {
-            if (Objects.equals(productList.get(i).getId(), product.getId())){
-                productList.set(i,product);
+            if (productList.get(i).getId() == product.getId()) {
+                productList.set(i, product);
                 break;
             }
         }
@@ -32,8 +33,8 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public Product findProduct(int id) {
-        for(Product p :productList){
-            if(Objects.equals(p.getId(), id)){
+        for (Product p : productList) {
+            if (Objects.equals(p.getId(), id)) {
                 return p;
             }
         }
@@ -57,7 +58,10 @@ public class ProductRepository implements IProductRepository {
     @Override
     public void searchProduct(String name) {
         for (Product product : productList) {
-            if (product.getName().equals(name)) {
+//            if (product.getName().equals(name)) {
+//                System.out.println(product);
+//            }
+            if (product.getName().contains(name)) {
                 System.out.println(product);
             }
         }

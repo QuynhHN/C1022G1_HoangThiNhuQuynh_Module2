@@ -37,7 +37,7 @@ public class Product implements Comparable<Product>{
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "ProductLinked{" +
                 "id=" + id +
                 ", price=" + price +
                 ", name='" + name + '\'' +

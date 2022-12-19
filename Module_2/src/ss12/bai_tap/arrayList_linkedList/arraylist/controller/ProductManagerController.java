@@ -39,9 +39,6 @@ public class ProductManagerController {
                     int idFix = Integer.parseInt(sc.nextLine());
                     Product p = productManagerService.findProductById(idFix);
                     if (p != null) {
-                        System.out.println("Nhập vào id mới");
-                        int newId = Integer.parseInt(sc.nextLine());
-                        p.setId(newId);
                         System.out.println("Nhập vào tên mới của sản phẩm");
                         String newName = sc.nextLine();
                         p.setName(newName);
