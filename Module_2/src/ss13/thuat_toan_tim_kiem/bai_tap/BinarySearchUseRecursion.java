@@ -18,9 +18,9 @@ public class BinarySearchUseRecursion {
         System.out.println(Arrays.toString(arr));
         System.out.println("Nhập vào giá trị cần tìm");
         int value = Integer.parseInt(sc.nextLine());
-        int temp=binarySearch(arr, 0, arr.length - 1, value);
+        int temp = binarySearch(arr, 0, arr.length - 1, value);
         if (temp != -1) {
-            System.out.println("Giá trị cần tìm nằm ở vị trí thứ: \n"+temp );
+            System.out.println("Giá trị cần tìm nằm ở vị trí thứ: \n" + temp);
         } else {
             System.out.println("Không tìm thấy");
         }
@@ -34,11 +34,12 @@ public class BinarySearchUseRecursion {
             if (arr[mid] == value) {
                 return mid;
             } else if (arr[mid] < value) {
-                return binarySearch(arr, mid - 1, right, value);
-            } else{
-                return binarySearch(arr, left, mid + 1, value);
+                return binarySearch(arr, mid +1, right, value);
+            } else {
+                return binarySearch(arr, left, mid - 1, value);
             }
-        } return -1;
+        }
+        return -1;
     }
 }
 
