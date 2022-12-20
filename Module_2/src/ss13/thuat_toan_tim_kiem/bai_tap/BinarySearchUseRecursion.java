@@ -22,19 +22,19 @@ public class BinarySearchUseRecursion {
     }
 
     private static int binarySearch(int[] arr, int left, int right, int value) {
-        left = 0;
-        right = arr.length - 1;
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (arr[mid] == value) {
-                return mid;
-            } else if (arr[mid] > value) {
-                return binarySearch(arr, mid - 1, right, value);
-            } else {
-                return binarySearch(arr, mid + 1, right, value);
-            }
+        int mid = 0;
+        if (left <= right) {
+            mid = (left + right) / 2;
         }
-        return left - 1;
+        if (arr[mid] == value) {
+            return mid;
+        } else if (arr[mid] > value) {
+            return binarySearch(arr, mid - 1, right, value);
+        } else if (arr[mid]<value) {
+            return binarySearch(arr, mid + 1, right, value);
+        } else return left - 1;
     }
 
 }
+
+
