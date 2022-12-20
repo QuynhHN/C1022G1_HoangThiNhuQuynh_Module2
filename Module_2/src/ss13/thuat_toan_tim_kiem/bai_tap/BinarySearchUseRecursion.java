@@ -18,23 +18,28 @@ public class BinarySearchUseRecursion {
         System.out.println(Arrays.toString(arr));
         System.out.println("Nhập vào giá trị cần tìm");
         int value = Integer.parseInt(sc.nextLine());
-        System.out.println("Giá trị cần tìm nằm ở vị trí thứ: \n" + binarySearch(arr, 0, arr.length - 1, value));
+        int temp=binarySearch(arr, 0, arr.length - 1, value);
+        if (temp != -1) {
+            System.out.println("Giá trị cần tìm nằm ở vị trí thứ: \n"+temp );
+        } else {
+            System.out.println("Không tìm thấy");
+        }
+
     }
 
-    private static int binarySearch(int[] arr, int left, int right, int value) {
-        int mid = 0;
+    public static int binarySearch(int[] arr, int left, int right, int value) {
+        int mid;
         if (left <= right) {
             mid = (left + right) / 2;
-        }
-        if (arr[mid] == value) {
-            return mid;
-        } else if (arr[mid] > value) {
-            return binarySearch(arr, mid - 1, right, value);
-        } else if (arr[mid]<value) {
-            return binarySearch(arr, mid + 1, right, value);
-        } else return left - 1;
+            if (arr[mid] == value) {
+                return mid;
+            } else if (arr[mid] < value) {
+                return binarySearch(arr, mid - 1, right, value);
+            } else{
+                return binarySearch(arr, left, mid + 1, value);
+            }
+        } return -1;
     }
-
 }
 
 
