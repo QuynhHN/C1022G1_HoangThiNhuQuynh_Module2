@@ -1,7 +1,6 @@
 package ss16.io_text_file.bai_tap.read_file_cvs;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,12 +30,10 @@ public class ReaderFileCountry {
                 countryList.add(country);
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            try{
+        } finally {
+            try {
                 buff.close();
             } catch (IOException e) {
                 e.printStackTrace();
