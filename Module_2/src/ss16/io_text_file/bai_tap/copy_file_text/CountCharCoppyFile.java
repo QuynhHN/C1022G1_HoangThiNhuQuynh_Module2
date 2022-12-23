@@ -16,7 +16,6 @@ public class CountCharCoppyFile {
         List<String> list = ReadAndWriteFile.readFileText(path);
         int count = countChar(list);
         readAndWriteFile.writeFile(TARGET, count, list);
-
     }
 
     public static int countChar(List<String> list) {
