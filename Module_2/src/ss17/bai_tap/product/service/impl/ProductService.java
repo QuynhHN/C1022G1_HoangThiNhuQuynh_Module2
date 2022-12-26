@@ -10,6 +10,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void addNewProduct(Product product) {
+        repository.addNewProduct(product);
     }
 
     @Override
