@@ -8,13 +8,16 @@ public class Person {
     private String phoneNumber;
     private String email;
 
-    public Person(String name, String dayOfBirth, boolean gender, String idCode, String phoneNumber, String email) {
+    public Person(String name, String dayOfBirth, String gender, String idCode, String phoneNumber, String email) {
         this.name = name;
         this.dayOfBirth = dayOfBirth;
         this.gender = gender;
         this.idCode = idCode;
         this.phoneNumber = phoneNumber;
         this.email = email;
+    }
+
+    public Person() {
     }
 
     public String getName() {
@@ -33,7 +36,7 @@ public class Person {
         this.dayOfBirth = dayOfBirth;
     }
 
-    public String getGender() {
+    public String isGender() {
         return gender;
     }
 

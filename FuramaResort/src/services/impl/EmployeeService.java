@@ -1,21 +1,19 @@
 package services.impl;
 
 import models.person.Employee;
+import repository.IEmployeeRepository;
+import repository.impl.EmployeeRepository;
 import services.IEmployeeService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeService implements IEmployeeService {
-    private static List<Employee> employeeList = new ArrayList<>();
-    static{
-        employeeList.add(new Employee(1,"Trần Văn A","22-12-2000","male","190200234","0905021032","tranvana@gmail.com"));
-        employeeList.add(new Employee(2,"Nguyễn Kim B","02-02-1999","female","223091567","0365789077","nguyenkimb@gmail.com"));
-    }
+    IEmployeeRepository employeeRepository = new EmployeeRepository();
 
     @Override
     public void display() {
-
+        employeeRepository.display();
     }
 
     @Override
@@ -24,12 +22,19 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public int findID(int id) {
-        return 0;
+    public void delete(String id) {
+
     }
 
     @Override
-    public void add() {
+    public Employee findEmployeeById(String id) {
+        return null;
+    }
+
+    @Override
+    public void edit(Employee employee) {
 
     }
+
+
 }

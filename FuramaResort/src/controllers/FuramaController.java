@@ -6,10 +6,11 @@ public class FuramaController {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         EmployeeManagement employeeManagement = new EmployeeManagement();
-        CustomerManagement customerManagement= new CustomerManagement();
-        FacilityManagement facilityManagement=new FacilityManagement();
+        CustomerManagement customerManagement = new CustomerManagement();
+        FacilityManagement facilityManagement = new FacilityManagement();
         BookingManagement bookingManagement = new BookingManagement();
         PromotionManagement promotionManagement = new PromotionManagement();
+
         do {
             System.out.println("-------Menu-------\n" +
                     "1. Employee Management\n" +
@@ -36,6 +37,9 @@ public class FuramaController {
                     break;
                 case 5:
                     promotionManagement.displayMainMenuPromotion();
+                    break;
+                case 6:
+                    System.exit(0);
                     break;
                 default:
                     System.out.println("Please input choice in menu");

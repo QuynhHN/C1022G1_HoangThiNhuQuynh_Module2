@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PromotionManagement {
     public void displayMainMenuPromotion() {
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         do {
             System.out.println("-------Menu-------\n" +
                     "1. Display list customers use service\n" +
@@ -13,7 +13,7 @@ public class PromotionManagement {
                     "-----------------\n" +
                     "Input your choice");
             int choice = Integer.parseInt(sc.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
 
                     break;
