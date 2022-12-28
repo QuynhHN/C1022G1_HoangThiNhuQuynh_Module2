@@ -23,12 +23,12 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public void delete(String id) {
-
+        employeeRepository.delete(id);
     }
 
     @Override
     public Employee findEmployeeById(String id) {
-        return null;
+        return employeeRepository.findEmployeeById(id);
     }
 
     @Override

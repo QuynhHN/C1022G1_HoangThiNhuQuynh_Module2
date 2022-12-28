@@ -70,13 +70,12 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
+        return
+                ", name='" + name + '\'' +
                 ", dayOfBirth='" + dayOfBirth + '\'' +
                 ", gender='" + gender + '\'' +
                 ", idCode='" + idCode + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+                ", email='" + email + '\'';
     }
 }

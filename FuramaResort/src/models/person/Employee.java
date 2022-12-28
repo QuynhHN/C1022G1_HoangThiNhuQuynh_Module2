@@ -6,32 +6,19 @@ public class Employee extends Person{
     private String academicLevel;
     private String position;
     private String salary;
-    private String gender;
 
 
-    public Employee(String id, String name, String dayOfBirth, String gender, String idCode, String phoneNumber, String email) {
+    public Employee(String id,String name, String dayOfBirth, String gender, String idCode, String phoneNumber, String email,
+                     String academicLevel, String position, String salary) {
         super(name, dayOfBirth, gender, idCode, phoneNumber, email);
-        this.id = this.id;
-        this.academicLevel = academicLevel;
-        this.position = position;
-        this.salary = salary;
-        this.gender = gender;
-//        boolean f=female;
-//        boolean m= male;
-//        if( gender = f){
-//            System.out.println("female");
-//        }else {
-//            System.out.println("male");
-//        }
-
-    }
-
-    public Employee( String id, String academicLevel, String position, String salary, String gender) {
         this.id = id;
         this.academicLevel = academicLevel;
         this.position = position;
         this.salary = salary;
-        this.gender = gender;
+    }
+
+    public Employee() {
+
     }
 
     public String getId() {
@@ -67,23 +54,13 @@ public class Employee extends Person{
     }
 
     @Override
-    public String isGender() {
-        return gender;
-    }
-
-    @Override
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
+                "id='" + id + '\'' +
+                 super.toString() +
                 ", academicLevel='" + academicLevel + '\'' +
                 ", position='" + position + '\'' +
                 ", salary='" + salary + '\'' +
-                ", gender=" + gender +
-                '}';
+                "} " ;
     }
 }
