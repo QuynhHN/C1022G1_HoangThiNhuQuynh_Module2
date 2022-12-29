@@ -66,62 +66,64 @@ public class CustomerManagement {
                         switch (choice1) {
                             case 1:
                                 System.out.println("Input name change");
-                                String newName= sc.nextLine();
+                                String newName = sc.nextLine();
                                 customer.setName(newName);
                                 customerService.edit(customer);
                                 break;
                             case 2:
                                 System.out.println("Input day of birth");
-                                String newDayOfBirth =sc.nextLine();
+                                String newDayOfBirth = sc.nextLine();
                                 customer.setDayOfBirth(newDayOfBirth);
                                 customerService.edit(customer);
                                 break;
                             case 3:
                                 System.out.println("Input gender");
-                                String newGender =sc.nextLine();
+                                String newGender = sc.nextLine();
                                 customer.setGender(newGender);
                                 customerService.edit(customer);
                                 break;
                             case 4:
                                 System.out.println("Input id code");
-                                String newIdCode =sc.nextLine();
+                                String newIdCode = sc.nextLine();
                                 customer.setIdCode(newIdCode);
                                 customerService.edit(customer);
                                 break;
                             case 5:
                                 System.out.println("Input phone number");
-                                String newPhoneNumber =sc.nextLine();
+                                String newPhoneNumber = sc.nextLine();
                                 customer.setPhoneNumber(newPhoneNumber);
                                 customerService.edit(customer);
                                 break;
                             case 6:
                                 System.out.println("Input email");
-                                String newEmail =sc.nextLine();
+                                String newEmail = sc.nextLine();
                                 customer.setEmail(newEmail);
                                 customerService.edit(customer);
                                 break;
                             case 7:
                                 System.out.println("Input address");
-                                String newAddress =sc.nextLine();
+                                String newAddress = sc.nextLine();
                                 customer.setAddress(newAddress);
                                 customerService.edit(customer);
                                 break;
                             case 8:
                                 System.out.println("Input type of Guest");
-                                String newTypeOfGuest =sc.nextLine();
+                                String newTypeOfGuest = sc.nextLine();
                                 customer.setTypeOfGuest(newTypeOfGuest);
                                 customerService.edit(customer);
                                 break;
                             case 9:
-                                System.exit(0);
+                                displayMainMenuCustomer();
                                 break;
                             default:
                                 System.out.println("Please input choice in menu");
                         }
-                    }else{
+                    } else {
                         System.out.println("Not existed");
                     }
                     break;
+                case 5:
+                    return customerService;
                 default:
                     System.out.println("Please input choice in menu");
             }

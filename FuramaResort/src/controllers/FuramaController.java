@@ -24,7 +24,7 @@ public class FuramaController {
             int choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
                 case 1:
-                    employeeManagement.displayMainMenu();
+                    employeeManagement.displayMainMenuEmployee();
                     break;
                 case 2:
                     customerManagement.displayMainMenuCustomer();
