@@ -2,17 +2,27 @@ package models.facility;
 
 public class Facility {
     private String serviceName;
+    private String name;
     private String usableArea;
     private String rentalCosts;
     private String maximumNumberOfPeople;
     private String rentalType;
 
-    public Facility(String serviceName, String usableArea, String rentalCosts, String maximumNumberOfPeople, String rentalType) {
+    public Facility(String serviceName, String name, String usableArea, String rentalCosts, String maximumNumberOfPeople, String rentalType) {
         this.serviceName = serviceName;
+        this.name = name;
         this.usableArea = usableArea;
         this.rentalCosts = rentalCosts;
         this.maximumNumberOfPeople = maximumNumberOfPeople;
         this.rentalType = rentalType;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getServiceName() {
@@ -59,6 +69,7 @@ public class Facility {
     public String toString() {
         return
                 "serviceName='" + serviceName + '\'' +
+                ", name='" + name + '\'' +
                 ", usableArea='" + usableArea + '\'' +
                 ", rentalCosts='" + rentalCosts + '\'' +
                 ", maximumNumberOfPeople='" + maximumNumberOfPeople + '\'' +

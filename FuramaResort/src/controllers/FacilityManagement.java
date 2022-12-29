@@ -35,8 +35,10 @@ public class FacilityManagement {
                     int choiceNewFacility = Integer.parseInt(sc.nextLine());
                     switch (choiceNewFacility) {
                         case 1:
-                            System.out.println("Input new name service");
-                            String newName = sc.nextLine();
+                            System.out.println("Input new name service ");
+                            String newServiceNameVilla = sc.nextLine();
+                            System.out.println("Input new name");
+                            String newNameVilla= sc.nextLine();
                             System.out.println("Input new usable area");
                             String newUsableArea = sc.nextLine();
                             System.out.println(" Input rental costs");
@@ -53,11 +55,13 @@ public class FacilityManagement {
                             String newNumberOfFloors = sc.nextLine();
                             System.out.println("Input number of use");
                             int numberOfUses = Integer.parseInt(sc.nextLine());
-                            Facility villa = new Villa(newName, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
+                            Facility villa = new Villa(newServiceNameVilla,newNameVilla, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
                             facilityService.add(villa, numberOfUses);
                             break;
                         case 2:
                             System.out.println("Input new name service");
+                            String newServiceName = sc.nextLine();
+                            System.out.println("Input name");
                             String newNameRoom = sc.nextLine();
                             System.out.println("Input new usable area");
                             String newUsableAreaRoom = sc.nextLine();
@@ -71,7 +75,7 @@ public class FacilityManagement {
                             String newFreeServiceRoom = sc.nextLine();
                             System.out.println("Input number of use");
                             int numberOfUsesRoom = Integer.parseInt(sc.nextLine());
-                            Facility room = new Room(newNameRoom, newUsableAreaRoom, newRentalCostsRoom, newMaximumNumberOfPeopleRoom, newRentalTypeRoom, newFreeServiceRoom);
+                            Facility room = new Room(newServiceName, newNameRoom,newUsableAreaRoom, newRentalCostsRoom, newMaximumNumberOfPeopleRoom, newRentalTypeRoom, newFreeServiceRoom);
                             facilityService.add(room, numberOfUsesRoom);
                             break;
                         case 3:

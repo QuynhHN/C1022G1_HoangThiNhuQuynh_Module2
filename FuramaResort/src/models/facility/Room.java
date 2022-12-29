@@ -3,8 +3,8 @@ package models.facility;
 public class Room extends Facility {
     private String freeService;
 
-    public Room(String serviceName, String usableArea, String rentalCosts, String maximumNumberOfPeople, String rentalType, String freeService) {
-        super(serviceName, usableArea, rentalCosts, maximumNumberOfPeople, rentalType);
+    public Room(String serviceName, String name, String usableArea, String rentalCosts, String maximumNumberOfPeople, String rentalType, String freeService) {
+        super(serviceName, name, usableArea, rentalCosts, maximumNumberOfPeople, rentalType);
         this.freeService = freeService;
     }
 

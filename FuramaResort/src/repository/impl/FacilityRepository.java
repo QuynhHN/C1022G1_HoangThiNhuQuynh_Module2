@@ -14,9 +14,9 @@ public class FacilityRepository implements IFacilityRepository {
     static Map<Facility, Integer> facilityMaintenanceMap = new LinkedHashMap<>();
 
     static {
-        facilityIntegerMap.put(new Room("Big room", "60", "3000000", "6", "day", "Breakfast"), 4);
-        facilityIntegerMap.put(new Room("Twin beds", "40", "1000000", "4", "day", "Clean the room"), 2);
-        facilityMaintenanceMap.put(new Villa("Villa White", "200", "8000000", "8", "day", "6", "50.0", "2"), 5);
+        facilityIntegerMap.put(new Room("SVRO-0012","Big room", "60.0", "3000000", "6", "Day", "Breakfast"), 4);
+        facilityIntegerMap.put(new Room("SVRO-1234","Twin beds", "40.0", "1000000", "4", "Month", "Clean the room"), 2);
+        facilityMaintenanceMap.put(new Villa("SVVL-0234","Villa White", "200.0", "8000000", "8", "Day", "6", "50.0", "2"), 5);
     }
 
 
