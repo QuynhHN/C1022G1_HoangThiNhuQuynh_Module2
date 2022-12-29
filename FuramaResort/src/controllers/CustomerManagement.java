@@ -59,64 +59,67 @@ public class CustomerManagement {
                                 "6. Edit email \n" +
                                 "7. Edit address \n" +
                                 "8. Edit type of Guest \n" +
-                                "10. Return main menu" +
+                                "9. Return main menu\n" +
                                 "-----------------\n" +
                                 "Input your choice");
                         int choice1 = Integer.parseInt(sc.nextLine());
                         switch (choice1) {
                             case 1:
-                                System.out.println("Nhập vào tên cần thay đổi");
+                                System.out.println("Input name change");
                                 String newName= sc.nextLine();
                                 customer.setName(newName);
                                 customerService.edit(customer);
                                 break;
                             case 2:
-                                System.out.println("Nhập vào ngày sinh");
+                                System.out.println("Input day of birth");
                                 String newDayOfBirth =sc.nextLine();
                                 customer.setDayOfBirth(newDayOfBirth);
                                 customerService.edit(customer);
                                 break;
                             case 3:
-                                System.out.println("Nhập giới tính");
+                                System.out.println("Input gender");
                                 String newGender =sc.nextLine();
                                 customer.setGender(newGender);
                                 customerService.edit(customer);
                                 break;
                             case 4:
-                                System.out.println("Nhập vào số chứng minh");
+                                System.out.println("Input id code");
                                 String newIdCode =sc.nextLine();
                                 customer.setIdCode(newIdCode);
                                 customerService.edit(customer);
                                 break;
                             case 5:
-                                System.out.println("Nhập vào số điện thoại");
+                                System.out.println("Input phone number");
                                 String newPhoneNumber =sc.nextLine();
                                 customer.setPhoneNumber(newPhoneNumber);
                                 customerService.edit(customer);
                                 break;
                             case 6:
-                                System.out.println("Nhập vào email");
+                                System.out.println("Input email");
                                 String newEmail =sc.nextLine();
                                 customer.setEmail(newEmail);
                                 customerService.edit(customer);
                                 break;
                             case 7:
-                                System.out.println("Nhập vào địa chỉ");
+                                System.out.println("Input address");
                                 String newAddress =sc.nextLine();
                                 customer.setAddress(newAddress);
                                 customerService.edit(customer);
                                 break;
                             case 8:
-                                System.out.println("Nhập vào loại khách");
+                                System.out.println("Input type of Guest");
                                 String newTypeOfGuest =sc.nextLine();
                                 customer.setTypeOfGuest(newTypeOfGuest);
                                 customerService.edit(customer);
                                 break;
-                            default:
+                            case 9:
                                 System.exit(0);
+                                break;
+                            default:
+                                System.out.println("Please input choice in menu");
                         }
                     }else{
-                        System.out.println("Không tồn tại");
+                        System.out.println("Not existed");
                     }
                     break;
                 default:

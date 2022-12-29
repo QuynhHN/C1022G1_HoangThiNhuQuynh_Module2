@@ -18,7 +18,7 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public void add(Employee employee) {
-
+        employeeRepository.add(employee);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public void edit(Employee employee) {
-
+        employeeRepository.edit(employee);
     }
 
 

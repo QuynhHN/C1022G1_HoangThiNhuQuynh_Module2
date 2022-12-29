@@ -15,7 +15,7 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public void add(Customer customer) {
-
+        customerRepository.add(customer);
     }
 
     @Override
@@ -25,6 +25,6 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public void edit(Customer customer) {
-
+        customerRepository.edit(customer);
     }
 }

@@ -19,8 +19,8 @@ public class EmployeeManagement {
                     "5. Return main menu\n" +
                     "-----------------\n" +
                     "Input your choice");
-            int choice = Integer.parseInt(sc.nextLine());
-            switch (choice) {
+            int choiceEmployee = Integer.parseInt(sc.nextLine());
+            switch (choiceEmployee) {
                 case 1:
                     employeeService.display();
                     break;
@@ -144,7 +144,7 @@ public class EmployeeManagement {
                                     System.exit(0);
                             }
                     }else{
-                        System.out.println("Không tồn tại");
+                        System.out.println("Not existed");
                     }
                     break;
                 case 5:
