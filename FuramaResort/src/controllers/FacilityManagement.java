@@ -10,18 +10,18 @@ import java.util.Scanner;
 
 public class FacilityManagement {
     public void displayMainMenuFacility() {
-        IFacilityService facilityService= new FacilityService();
-        Scanner sc= new Scanner(System.in);
+        IFacilityService facilityService = new FacilityService();
+        Scanner sc = new Scanner(System.in);
         do {
             System.out.println("-------Menu-------\n" +
                     "1. Display list facility\n" +
                     "2. Add new facility\n" +
                     "3. Display list facility maintenance\n" +
-                    "4. Return main menu\n"+
+                    "4. Return main menu\n" +
                     "-----------------\n" +
                     "Input your choice");
             int choiceFacility = Integer.parseInt(sc.nextLine());
-            switch (choiceFacility){
+            switch (choiceFacility) {
                 case 1:
                     facilityService.display();
                     break;
@@ -32,12 +32,12 @@ public class FacilityManagement {
                             "3. Back to menu\n" +
                             "-----------------\n" +
                             "Input your choice");
-                    int choiceNewFacility= Integer.parseInt(sc.nextLine());
-                    if(choiceNewFacility==1){
+                    int choiceNewFacility = Integer.parseInt(sc.nextLine());
+                    if (choiceNewFacility == 1) {
                         System.out.println("Input new name service");
-                        String newName= sc.nextLine();
+                        String newName = sc.nextLine();
                         System.out.println("Input new usable area");
-                        String newUsableArea= sc.nextLine();
+                        String newUsableArea = sc.nextLine();
                         System.out.println(" Input rental costs");
                         String newRentalCosts = sc.nextLine();
                         System.out.println("Input maximum number of people");
@@ -45,20 +45,20 @@ public class FacilityManagement {
                         System.out.println("Input rental type");
                         String newRentalType = sc.nextLine();
                         System.out.println("Input room standard");
-                        String newRoomStandard =sc.nextLine();
+                        String newRoomStandard = sc.nextLine();
                         System.out.println("Input pool area");
                         String newPoolArea = sc.nextLine();
                         System.out.println("Input number of floors");
-                        String newNumberOfFloors= sc.nextLine();
+                        String newNumberOfFloors = sc.nextLine();
                         System.out.println("Input number of use");
-                        int numberOfUses= Integer.parseInt(sc.nextLine());
-                        Facility villa= new Villa(newName,newUsableArea,newRentalCosts,newMaximumNumberOfPeople,newRentalType,newRoomStandard,newPoolArea,newNumberOfFloors);
-                        facilityService.add(villa,numberOfUses);
-                    }else {
+                        int numberOfUses = Integer.parseInt(sc.nextLine());
+                        Facility villa = new Villa(newName, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
+                        facilityService.add(villa, numberOfUses);
+                    } else {
                         System.out.println("Input new name service");
-                        String newName= sc.nextLine();
+                        String newName = sc.nextLine();
                         System.out.println("Input new usable area");
-                        String newUsableArea= sc.nextLine();
+                        String newUsableArea = sc.nextLine();
                         System.out.println(" Input rental costs");
                         String newRentalCosts = sc.nextLine();
                         System.out.println("Input maximum number of people");
@@ -66,11 +66,11 @@ public class FacilityManagement {
                         System.out.println("Input rental type");
                         String newRentalType = sc.nextLine();
                         System.out.println("Input free service");
-                        String newFreeService= sc.nextLine();
+                        String newFreeService = sc.nextLine();
                         System.out.println("Input number of use");
-                        int numberOfUses= Integer.parseInt(sc.nextLine());
-                        Facility room= new Room(newName,newUsableArea,newRentalCosts,newMaximumNumberOfPeople,newRentalType,newFreeService);
-                        facilityService.add(room,numberOfUses);
+                        int numberOfUses = Integer.parseInt(sc.nextLine());
+                        Facility room = new Room(newName, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newFreeService);
+                        facilityService.add(room, numberOfUses);
                     }
                 case 3:
                     facilityService.displayListFacilityMaintenance();
