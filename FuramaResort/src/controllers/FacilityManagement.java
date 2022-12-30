@@ -1,5 +1,6 @@
 package controllers;
 
+import utils.Regex;
 import models.facility.Facility;
 import models.facility.Room;
 import models.facility.Villa;
@@ -35,47 +36,108 @@ public class FacilityManagement {
                     int choiceNewFacility = Integer.parseInt(sc.nextLine());
                     switch (choiceNewFacility) {
                         case 1:
-                            System.out.println("Input new name service ");
-                            String newServiceNameVilla = sc.nextLine();
-                            System.out.println("Input new name");
-                            String newNameVilla= sc.nextLine();
-                            System.out.println("Input new usable area");
-                            String newUsableArea = sc.nextLine();
-                            System.out.println(" Input rental costs");
-                            String newRentalCosts = sc.nextLine();
-                            System.out.println("Input maximum number of people");
-                            String newMaximumNumberOfPeople = sc.nextLine();
-                            System.out.println("Input rental type");
-                            String newRentalType = sc.nextLine();
-                            System.out.println("Input room standard");
-                            String newRoomStandard = sc.nextLine();
-                            System.out.println("Input pool area");
-                            String newPoolArea = sc.nextLine();
-                            System.out.println("Input number of floors");
-                            String newNumberOfFloors = sc.nextLine();
+                            String newServiceNameVilla = null;
+                            do {
+                                System.out.println("Input new name service ");
+                                newServiceNameVilla = sc.nextLine();
+                            } while (!newServiceNameVilla.matches(Regex.REGEX_VILLA_NAME));
+
+                            String newNameVilla = null;
+                            do {
+                                System.out.println("Input new name");
+                                newNameVilla = sc.nextLine();
+                            } while (!newNameVilla.matches(Regex.REGEX_NAME));
+
+                            String newUsableArea = null;
+                            do {
+                                System.out.println("Input new usable area");
+                                newUsableArea = sc.nextLine();
+                            } while (!newUsableArea.matches(Regex.REGEX_AREA));
+
+                            String newRentalCosts;
+                            do {
+                                System.out.println(" Input rental costs");
+                                newRentalCosts = sc.nextLine();
+                            } while (!newRentalCosts.matches(Regex.REGEX_RENTAL_COSTS));
+
+                            String newMaximumNumberOfPeople;
+                            do {
+                                System.out.println("Input maximum number of people");
+                                newMaximumNumberOfPeople = sc.nextLine();
+                            } while (!newMaximumNumberOfPeople.matches(Regex.REGEX_MAX_PEOPLE));
+
+                            String newRentalType;
+                            do {
+                                System.out.println("Input rental type");
+                                newRentalType = sc.nextLine();
+                            } while (!newRentalType.matches(Regex.REGEX_RENTAL_TYPE));
+
+                            String newRoomStandard;
+                            do {
+                                System.out.println("Input room standard");
+                                newRoomStandard = sc.nextLine();
+                            } while (newRoomStandard.matches(Regex.REGEX_ROOM_STANDARD));
+
+                            String newPoolArea;
+                            do {
+                                System.out.println("Input pool area");
+                                newPoolArea = sc.nextLine();
+                            } while (!newPoolArea.matches(Regex.REGEX_AREA));
+
+                            String newNumberOfFloors;
+                            do {
+                                System.out.println("Input number of floors");
+                                newNumberOfFloors = sc.nextLine();
+                            } while (!newNumberOfFloors.matches(Regex.REGEX_NUMBER_OF_FLOORS));
+
                             System.out.println("Input number of use");
                             int numberOfUses = Integer.parseInt(sc.nextLine());
-                            Facility villa = new Villa(newServiceNameVilla,newNameVilla, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
+                            Facility villa = new Villa(newServiceNameVilla, newNameVilla, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
                             facilityService.add(villa, numberOfUses);
                             break;
                         case 2:
-                            System.out.println("Input new name service");
-                            String newServiceName = sc.nextLine();
-                            System.out.println("Input name");
-                            String newNameRoom = sc.nextLine();
-                            System.out.println("Input new usable area");
-                            String newUsableAreaRoom = sc.nextLine();
-                            System.out.println(" Input rental costs");
-                            String newRentalCostsRoom = sc.nextLine();
-                            System.out.println("Input maximum number of people");
-                            String newMaximumNumberOfPeopleRoom = sc.nextLine();
-                            System.out.println("Input rental type");
-                            String newRentalTypeRoom = sc.nextLine();
+                            String newServiceName;
+                            do {
+                                System.out.println("Input new name service");
+                                newServiceName = sc.nextLine();
+                            } while (!newServiceName.matches(Regex.REGEX_ROOM_NAME));
+
+                            String newNameRoom;
+                            do {
+                                System.out.println("Input name");
+                                newNameRoom = sc.nextLine();
+                            } while (!newNameRoom.matches(Regex.REGEX_NAME));
+
+                            String newUsableAreaRoom;
+                            do {
+                                System.out.println("Input new usable area");
+                                newUsableAreaRoom = sc.nextLine();
+                            } while (!newUsableAreaRoom.matches(Regex.REGEX_AREA));
+
+                            String newRentalCostsRoom;
+                            do {
+                                System.out.println(" Input rental costs");
+                                newRentalCostsRoom = sc.nextLine();
+                            } while (!newRentalCostsRoom.matches(Regex.REGEX_RENTAL_COSTS));
+
+                            String newMaximumNumberOfPeopleRoom;
+                            do {
+                                System.out.println("Input maximum number of people");
+                                newMaximumNumberOfPeopleRoom = sc.nextLine();
+                            } while (!newMaximumNumberOfPeopleRoom.matches(Regex.REGEX_MAX_PEOPLE));
+
+                            String newRentalTypeRoom;
+                            do {
+                                System.out.println("Input rental type");
+                                newRentalTypeRoom = sc.nextLine();
+                            } while (!newRentalTypeRoom.matches((Regex.REGEX_RENTAL_TYPE)));
+
                             System.out.println("Input free service");
                             String newFreeServiceRoom = sc.nextLine();
+
                             System.out.println("Input number of use");
                             int numberOfUsesRoom = Integer.parseInt(sc.nextLine());
-                            Facility room = new Room(newServiceName, newNameRoom,newUsableAreaRoom, newRentalCostsRoom, newMaximumNumberOfPeopleRoom, newRentalTypeRoom, newFreeServiceRoom);
+                            Facility room = new Room(newServiceName, newNameRoom, newUsableAreaRoom, newRentalCostsRoom, newMaximumNumberOfPeopleRoom, newRentalTypeRoom, newFreeServiceRoom);
                             facilityService.add(room, numberOfUsesRoom);
                             break;
                         case 3:
