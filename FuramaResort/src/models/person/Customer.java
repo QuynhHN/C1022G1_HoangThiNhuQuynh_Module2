@@ -48,4 +48,8 @@ public class Customer extends Person {
                 ", typeOfGuest='" + typeOfGuest + '\'' +
                 "} ";
     }
+    public String formatCSVCustomer(){
+        String comma = ",";
+        return this.id+comma+super.convertLine()+comma +this.typeOfGuest+comma+this.address;
+    }
 }

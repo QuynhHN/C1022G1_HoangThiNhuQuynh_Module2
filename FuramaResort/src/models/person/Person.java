@@ -78,4 +78,9 @@ public class Person {
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'';
     }
+
+    public String convertLine(){
+        String comma = ",";
+        return this.name+comma+this.dayOfBirth+comma+this.gender+comma+this.idCode+comma+this.phoneNumber+comma+this.email;
+    }
 }

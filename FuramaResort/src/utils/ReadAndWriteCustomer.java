@@ -1,16 +1,16 @@
 package utils;
 
-import models.person.Employee;
+import models.person.Customer;
 
 import java.io.*;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class ReadAndWriteEmployee {
-    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\employee.csv";
-public static List<Employee>readEmployee (String filePath){
+public class ReadAndWriteCustomer {
+    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\customer.csv";
 
-        List<Employee> employeeList = new ArrayList<>();
+    public static List<Customer> readFile(){
+        List<Customer> customerList = new LinkedList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
@@ -18,8 +18,7 @@ public static List<Employee>readEmployee (String filePath){
             bufferedReader = new BufferedReader(fileReader);
             String line;
             String temp[];
-            Employee employee1;
-            while ((line = bufferedReader.readLine()) != null){
+            while ((line=bufferedReader.readLine())!=null){
                 temp = line.split(",");
                 String id = temp[0];
                 String name = temp[1];
@@ -28,33 +27,32 @@ public static List<Employee>readEmployee (String filePath){
                 String cMND = temp[4];
                 String phone = temp[5];
                 String email = temp[6];
-                String level = temp[7];
-                String position = temp[8];
-                String salary = temp[9];
-                employee1 = new  Employee(id, name, date, gender, cMND, phone, email, level, position, salary);
-                employeeList.add(employee1);
+                String customerType= temp[7];
+                String address = temp[8];
+                Customer customer = new Customer(id,name,date,gender,cMND,phone,email,customerType,address);
+                customerList.add(customer);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 bufferedReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        return  employeeList;
+        return customerList;
     }
-    public static void writerFile(List<Employee> employeeList){
-        FileWriter fileWriter=null;
-        BufferedWriter bufferedWriter=null;
+    public static void writeFile(List<Customer> customerList){
+        FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(FILE_PATH);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (Employee employee : employeeList){
-                bufferedWriter.write(employee.formatCSVEmployee());
+            for (Customer customer : customerList){
+                bufferedWriter.write(customer.formatCSVCustomer());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {
@@ -66,6 +64,6 @@ public static List<Employee>readEmployee (String filePath){
                 e.printStackTrace();
             }
         }
+
     }
 }
-
