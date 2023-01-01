@@ -44,4 +44,9 @@ public class Villa extends Facility {
                 ", numberOfFloors='" + numberOfFloors + '\'' +
                 "} ";
     }
+
+    public String formatCSVVilla() {
+        final String COMMA = ",";
+        return super.convertLineFacility() + COMMA + this.roomStandard + COMMA + poolArea + COMMA + numberOfFloors;
+    }
 }

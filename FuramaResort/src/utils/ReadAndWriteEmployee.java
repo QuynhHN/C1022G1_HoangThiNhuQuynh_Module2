@@ -23,15 +23,15 @@ public static List<Employee>readEmployee (String filePath){
                 temp = line.split(",");
                 String id = temp[0];
                 String name = temp[1];
-                String date = temp[2];
+                String dayOfBirth = temp[2];
                 String gender = temp[3];
-                String cMND = temp[4];
-                String phone = temp[5];
+                String idCode = temp[4];
+                String phoneNumber = temp[5];
                 String email = temp[6];
-                String level = temp[7];
+                String academicLevel = temp[7];
                 String position = temp[8];
                 String salary = temp[9];
-                employee1 = new  Employee(id, name, date, gender, cMND, phone, email, level, position, salary);
+                employee1 = new  Employee(id, name, dayOfBirth, gender, idCode, phoneNumber, email, academicLevel, position, salary);
                 employeeList.add(employee1);
             }
         } catch (FileNotFoundException e) {

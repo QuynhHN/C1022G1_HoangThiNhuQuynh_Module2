@@ -22,14 +22,14 @@ public class ReadAndWriteCustomer {
                 temp = line.split(",");
                 String id = temp[0];
                 String name = temp[1];
-                String date = temp[2];
+                String dayOfBirth = temp[2];
                 String gender = temp[3];
-                String cMND = temp[4];
-                String phone = temp[5];
+                String idCode = temp[4];
+                String phoneNumber = temp[5];
                 String email = temp[6];
-                String customerType= temp[7];
-                String address = temp[8];
-                Customer customer = new Customer(id,name,date,gender,cMND,phone,email,customerType,address);
+                String address = temp[7];
+                String typeOfGuest= temp[8];
+                Customer customer = new Customer(id,name, dayOfBirth,gender,idCode, phoneNumber,email,address,typeOfGuest);
                 customerList.add(customer);
             }
         } catch (FileNotFoundException e) {

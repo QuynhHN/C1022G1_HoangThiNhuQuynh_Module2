@@ -1,5 +1,7 @@
 package models.facility;
 
+import java.util.Objects;
+
 public class Facility {
     private String serviceName;
     private String name;
@@ -69,10 +71,16 @@ public class Facility {
     public String toString() {
         return
                 "serviceName='" + serviceName + '\'' +
-                ", name='" + name + '\'' +
-                ", usableArea='" + usableArea + '\'' +
-                ", rentalCosts='" + rentalCosts + '\'' +
-                ", maximumNumberOfPeople='" + maximumNumberOfPeople + '\'' +
-                ", rentalType='" + rentalType + '\'';
+                        ", name='" + name + '\'' +
+                        ", usableArea='" + usableArea + '\'' +
+                        ", rentalCosts='" + rentalCosts + '\'' +
+                        ", maximumNumberOfPeople='" + maximumNumberOfPeople + '\'' +
+                        ", rentalType='" + rentalType + '\'';
+    }
+
+    public String convertLineFacility() {
+        final String COMMA = ",";
+        return this.serviceName + COMMA + this.name + COMMA + this.usableArea + COMMA +
+                this.rentalCosts + COMMA + this.maximumNumberOfPeople + COMMA + this.rentalType;
     }
 }
