@@ -4,6 +4,8 @@ import models.facility.Facility;
 import models.facility.Room;
 import models.facility.Villa;
 import repository.IFacilityRepository;
+import utils.ReadAndWriteRoom;
+import utils.ReadAndWriteVilla;
 
 import javax.xml.ws.Service;
 import java.util.LinkedHashMap;
@@ -22,19 +24,26 @@ public class FacilityRepository implements IFacilityRepository {
 
     @Override
     public void display() {
-        for (Facility facility : facilityIntegerMap.keySet()) {
-            System.out.println(facility);
-            System.out.println(facilityIntegerMap.get(facility));
-
+        Map<Room,Integer> roomMap= ReadAndWriteRoom.readFile();
+        Map<Villa,Integer> villaMap= ReadAndWriteVilla.readFile();
+        for (Map.Entry<Room,Integer> entry:roomMap.entrySet()){
+            System.out.println(entry.getKey()+" : "+entry.getValue());
+        }
+        for (Map.Entry<Villa,Integer>entry:villaMap.entrySet()){
+            System.out.println(entry.getKey()+ " : "+ entry.getValue());
         }
     }
 
     @Override
     public void add(Facility facility, int numberOfUses) {
+        Map<Room,Integer>roomMap=ReadAndWriteRoom.readFile();
+        Map<Villa,Integer>villaMap=ReadAndWriteVilla.readFile();
         if (numberOfUses < 5) {
-            facilityIntegerMap.put(facility, numberOfUses);
+            facilityIntegerMap.put((Facility) roomMap, numberOfUses);
+            facilityIntegerMap.put((Facility) villaMap,numberOfUses);
         } else {
-            facilityMaintenanceMap.put(facility, numberOfUses);
+            facilityMaintenanceMap.put((Facility) roomMap, numberOfUses);
+            facilityMaintenanceMap.put((Facility) villaMap,numberOfUses);
         }
 
     }

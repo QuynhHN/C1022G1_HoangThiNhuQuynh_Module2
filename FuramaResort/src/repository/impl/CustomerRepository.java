@@ -1,8 +1,8 @@
 package repository.impl;
 
 import models.person.Customer;
-import models.person.Employee;
 import repository.ICustomerRepository;
+import utils.ReadAndWriteCustomer;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -18,6 +18,7 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void display() {
+        customerList = ReadAndWriteCustomer.readFileCustomer();
         for (Customer customer : customerList) {
             System.out.println(customer);
         }
@@ -25,7 +26,9 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void add(Customer customer) {
+        customerList = ReadAndWriteCustomer.readFileCustomer();
         customerList.add(customer);
+        ReadAndWriteCustomer.writeFile(customerList);
     }
 
     @Override
@@ -40,11 +43,13 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public void edit(Customer customer) {
+        customerList = ReadAndWriteCustomer.readFileCustomer();
         for (int i = 0; i < customerList.size(); i++) {
             if (customerList.get(i).getId().equals(customer.getId())) {
                 customerList.set(i, customer);
                 break;
             }
         }
+        ReadAndWriteCustomer.writeFile(customerList);
     }
 }

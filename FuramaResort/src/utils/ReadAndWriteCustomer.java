@@ -9,7 +9,7 @@ import java.util.List;
 public class ReadAndWriteCustomer {
     public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\customer.csv";
 
-    public static List<Customer> readFile(){
+    public static List<Customer> readFileCustomer(){
         List<Customer> customerList = new LinkedList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;

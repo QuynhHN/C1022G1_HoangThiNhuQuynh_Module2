@@ -22,4 +22,8 @@ public class Room extends Facility {
                 ", freeService='" + freeService + '\'' +
                 "} ";
     }
+    public String formatCSVRoom(){
+        final String COMMA=",";
+        return super.convertLineFacility()+ COMMA +this.freeService;
+    }
 }

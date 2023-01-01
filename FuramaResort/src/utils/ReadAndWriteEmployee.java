@@ -7,9 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadAndWriteEmployee {
-    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\employee.csv";
-public static List<Employee>readEmployee (String filePath){
 
+    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\employee.csv";
+
+public static List<Employee>readEmployee (){
         List<Employee> employeeList = new ArrayList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
