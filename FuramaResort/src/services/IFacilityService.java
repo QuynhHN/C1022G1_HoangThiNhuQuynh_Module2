@@ -5,7 +5,10 @@ import models.facility.Facility;
 public interface IFacilityService {
     void display();
 
-    void add(Facility facility, int numberOfUses);
+    void addRoom(Facility room, int numberOfUses);
+
+    void addVilla(Facility villa, int numberOfUses);
+
 
     void displayListFacilityMaintenance();
 }

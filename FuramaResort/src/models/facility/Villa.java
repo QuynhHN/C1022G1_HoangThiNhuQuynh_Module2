@@ -40,15 +40,9 @@ public class Villa extends Facility {
 
     @Override
     public String toString() {
-        return "Villa{" + super.toString() +
-                ", roomStandard='" + roomStandard + '\'' +
-                ", poolArea='" + poolArea + '\'' +
-                ", numberOfFloors='" + numberOfFloors + '\'' +
-                "} ";
-    }
-
-    public String formatCSVVilla() {
-        final String COMMA = ",";
-        return super.convertLineFacility() + COMMA + this.roomStandard + COMMA + poolArea + COMMA + numberOfFloors;
+        return super.toString() +
+                "," + roomStandard +
+                "," + poolArea +
+                "," + numberOfFloors;
     }
 }

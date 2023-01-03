@@ -41,12 +41,10 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "id='" + id + '\'' +
+        return id +","+
                 super.toString() +
-                ", address='" + address + '\'' +
-                ", typeOfGuest='" + typeOfGuest + '\'' +
-                "} ";
+                "," + address +
+                "," + typeOfGuest;
     }
     public String formatCSVCustomer(){
         String comma = ",";

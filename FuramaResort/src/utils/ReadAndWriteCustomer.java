@@ -7,9 +7,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ReadAndWriteCustomer {
-    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\customer.csv";
+    public static final String FILE_PATH = "src\\data\\customer.csv";
 
-    public static List<Customer> readFileCustomer(){
+    public static List<Customer> readFileCustomer() {
         List<Customer> customerList = new LinkedList<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
@@ -17,9 +17,8 @@ public class ReadAndWriteCustomer {
             fileReader = new FileReader(FILE_PATH);
             bufferedReader = new BufferedReader(fileReader);
             String line;
-            String temp[];
-            while ((line=bufferedReader.readLine())!=null){
-                temp = line.split(",");
+            while ((line = bufferedReader.readLine()) != null) {
+                String temp[] = line.split(",");
                 String id = temp[0];
                 String name = temp[1];
                 String dayOfBirth = temp[2];
@@ -28,8 +27,8 @@ public class ReadAndWriteCustomer {
                 String phoneNumber = temp[5];
                 String email = temp[6];
                 String address = temp[7];
-                String typeOfGuest= temp[8];
-                Customer customer = new Customer(id,name, dayOfBirth,gender,idCode, phoneNumber,email,address,typeOfGuest);
+                String typeOfGuest = temp[8];
+                Customer customer = new Customer(id, name, dayOfBirth, gender, idCode, phoneNumber, email, address, typeOfGuest);
                 customerList.add(customer);
             }
         } catch (FileNotFoundException e) {
@@ -45,19 +44,20 @@ public class ReadAndWriteCustomer {
         }
         return customerList;
     }
-    public static void writeFile(List<Customer> customerList){
+
+    public static void writeFile(List<Customer> customerList) {
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(FILE_PATH);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (Customer customer : customerList){
+            for (Customer customer : customerList) {
                 bufferedWriter.write(customer.formatCSVCustomer());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 bufferedWriter.close();
             } catch (IOException e) {

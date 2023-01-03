@@ -71,12 +71,12 @@ public class Person {
     @Override
     public String toString() {
         return
-                ", name='" + name + '\'' +
-                ", dayOfBirth='" + dayOfBirth + '\'' +
-                ", gender='" + gender + '\'' +
-                ", idCode='" + idCode + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", email='" + email + '\'';
+               name +
+                "," + dayOfBirth +
+                "," + gender +
+                "," + idCode +
+                "," + phoneNumber +
+                "," + email;
     }
 
     public String convertLine(){

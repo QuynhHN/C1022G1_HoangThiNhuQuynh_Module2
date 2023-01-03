@@ -93,7 +93,7 @@ public class FacilityManagement {
                             System.out.println("Input number of use");
                             int numberOfUses = Integer.parseInt(sc.nextLine());
                             Facility villa = new Villa(newServiceNameVilla, newNameVilla, newUsableArea, newRentalCosts, newMaximumNumberOfPeople, newRentalType, newRoomStandard, newPoolArea, newNumberOfFloors);
-                            facilityService.add(villa, numberOfUses);
+                            facilityService.addVilla(villa, numberOfUses);
                             break;
                         case 2:
                             String newServiceName;
@@ -138,7 +138,7 @@ public class FacilityManagement {
                             System.out.println("Input number of use");
                             int numberOfUsesRoom = Integer.parseInt(sc.nextLine());
                             Facility room = new Room(newServiceName, newNameRoom, newUsableAreaRoom, newRentalCostsRoom, newMaximumNumberOfPeopleRoom, newRentalTypeRoom, newFreeServiceRoom);
-                            facilityService.add(room, numberOfUsesRoom);
+                            facilityService.addRoom(room, numberOfUsesRoom);
                             break;
                         case 3:
                             displayMainMenuFacility();
@@ -146,6 +146,7 @@ public class FacilityManagement {
                         default:
                             System.out.println("Please input choice in menu");
                     }
+                    break;
                 case 3:
                     facilityService.displayListFacilityMaintenance();
                     break;

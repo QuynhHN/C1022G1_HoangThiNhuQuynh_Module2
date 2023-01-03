@@ -70,17 +70,11 @@ public class Facility {
     @Override
     public String toString() {
         return
-                "serviceName='" + serviceName + '\'' +
-                        ", name='" + name + '\'' +
-                        ", usableArea='" + usableArea + '\'' +
-                        ", rentalCosts='" + rentalCosts + '\'' +
-                        ", maximumNumberOfPeople='" + maximumNumberOfPeople + '\'' +
-                        ", rentalType='" + rentalType + '\'';
-    }
-
-    public String convertLineFacility() {
-        final String COMMA = ",";
-        return this.serviceName + COMMA + this.name + COMMA + this.usableArea + COMMA +
-                this.rentalCosts + COMMA + this.maximumNumberOfPeople + COMMA + this.rentalType;
+                serviceName +
+                        "," + name +
+                        "," + usableArea +
+                        "," + rentalCosts +
+                        "," + maximumNumberOfPeople +
+                        "," + rentalType;
     }
 }

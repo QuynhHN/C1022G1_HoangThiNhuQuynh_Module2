@@ -1,5 +1,6 @@
 package utils;
 
+import models.facility.Facility;
 import models.facility.Room;
 
 import java.io.*;
@@ -8,18 +9,17 @@ import java.util.Map;
 
 public class ReadAndWriteRoom {
 
-    public static final String FILE_PATH_ROOM = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\room.csv";
-    public static Map<Room, Integer> readFile() {
-        Map<Room, Integer> roomMap = new LinkedHashMap<>();
+    public static final String FILE_PATH_ROOM = "src\\data\\room.csv";
+    public static Map<Facility, Integer> readFile() {
+        Map<Facility, Integer> roomMap = new LinkedHashMap<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
             fileReader = new FileReader(FILE_PATH_ROOM);
             bufferedReader = new BufferedReader(fileReader);
-            String line = null;
-            String temp[];
+            String line;
             while ((line = bufferedReader.readLine()) != null) {
-                temp = line.split(",");
+                String temp[] = line.split(",");
                 String serviceName = temp[0];
                 String name = temp[1];
                 String usableArea = temp[2];
@@ -44,14 +44,14 @@ public class ReadAndWriteRoom {
         return roomMap;
     }
 
-    public static void writeFile(Map<Room, Integer> roomMap) {
+    public static void writeFile(Map<Facility, Integer> roomMap) {
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(FILE_PATH_ROOM);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (Map.Entry<Room, Integer> entryRoom : roomMap.entrySet()) {
-                bufferedWriter.write(entryRoom.getKey().formatCSVRoom() + "," + entryRoom.getValue());
+            for (Map.Entry<Facility, Integer> entryRoom : roomMap.entrySet()) {
+                bufferedWriter.write(entryRoom.getKey()+ "," + entryRoom.getValue());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {

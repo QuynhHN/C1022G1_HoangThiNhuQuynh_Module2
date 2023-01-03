@@ -6,7 +6,7 @@ import repository.impl.CustomerRepository;
 import services.ICustomerService;
 
 public class CustomerService implements ICustomerService {
-    ICustomerRepository customerRepository= new CustomerRepository();
+    ICustomerRepository customerRepository = new CustomerRepository();
 
     @Override
     public void display() {

@@ -55,13 +55,11 @@ public class Employee extends Person{
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id='" + id + '\'' +
+        return id +
                  super.toString() +
-                ", academicLevel='" + academicLevel + '\'' +
-                ", position='" + position + '\'' +
-                ", salary='" + salary + '\'' +
-                "} " ;
+                "," + academicLevel +
+                "," + position +
+                "," + salary;
     }
 
     public String formatCSVEmployee(){

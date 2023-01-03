@@ -1,5 +1,6 @@
 package utils;
 
+import models.facility.Facility;
 import models.facility.Villa;
 
 import java.io.*;
@@ -8,10 +9,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ReadAndWriteVilla {
-    public static final String FILE_PATH = "C:\\Users\\DELL\\Desktop\\CODEGYM\\module_2\\FuramaResort\\src\\data\\villa.csv";
+    public static final String FILE_PATH = "src\\data\\villa.csv";
 
-    public static Map<Villa, Integer> readFile() {
-        Map<Villa, Integer> villaMap = new LinkedHashMap<>();
+    public static Map<Facility, Integer> readFile() {
+        Map<Facility, Integer> villaMap = new LinkedHashMap<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
@@ -47,14 +48,14 @@ public class ReadAndWriteVilla {
         return villaMap;
     }
 
-    public static void writeFile(Map<Villa, Integer> villaMap) {
+    public static void writeFile(Map<Facility, Integer> villaMap) {
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(FILE_PATH);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (Map.Entry<Villa, Integer> entry : villaMap.entrySet()) {
-                bufferedWriter.write(entry.getKey().formatCSVVilla() + "," + entry.getValue());
+            for (Map.Entry<Facility, Integer> entry : villaMap.entrySet()) {
+                bufferedWriter.write(entry.getKey()+ "," + entry.getValue());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {

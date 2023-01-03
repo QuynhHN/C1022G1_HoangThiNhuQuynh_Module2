@@ -35,7 +35,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void delete(String id) {
-        employeeList=ReadAndWriteEmployee.readEmployee();
+        employeeList = ReadAndWriteEmployee.readEmployee();
         for (int i = 0; i < employeeList.size(); i++) {
             employeeList.remove(employeeList.get(i));
         }
@@ -54,7 +54,7 @@ public class EmployeeRepository implements IEmployeeRepository {
 
     @Override
     public void edit(Employee employee) {
-        employeeList=ReadAndWriteEmployee.readEmployee();
+        employeeList = ReadAndWriteEmployee.readEmployee();
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId().equals(employee.getId())) {
                 employeeList.set(i, employee);

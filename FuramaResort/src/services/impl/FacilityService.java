@@ -5,8 +5,6 @@ import repository.IFacilityRepository;
 import repository.impl.FacilityRepository;
 import services.IFacilityService;
 
-import java.util.Map;
-
 public class FacilityService implements IFacilityService {
     IFacilityRepository facilityRepository = new FacilityRepository();
 
@@ -16,8 +14,13 @@ public class FacilityService implements IFacilityService {
     }
 
     @Override
-    public void add(Facility facility, int numberOfUses) {
-        facilityRepository.add(facility, numberOfUses);
+    public void addRoom(Facility room, int numberOfUses) {
+        facilityRepository.addRoom(room, numberOfUses);
+    }
+
+    @Override
+    public void addVilla(Facility villa, int numberOfUses) {
+        facilityRepository.addVilla(villa, numberOfUses);
     }
 
     @Override
