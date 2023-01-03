@@ -25,28 +25,28 @@ public class CustomerManagement {
                     customerService.display();
                     break;
                 case 2:
-                    System.out.println("Nhập vào mã khách hàng");
+                    System.out.println("Input Id");
                     String id = sc.nextLine();
-                    System.out.println("Nhập vào tên");
+                    System.out.println("Input name");
                     String name = sc.nextLine();
-                    System.out.println("Nhập vào ngày sinh");
+                    System.out.println("Input day of birth");
                     String dateOfBirth = sc.nextLine();
-                    System.out.println("Nhập vào giới tính");
+                    System.out.println("Input gender");
                     String gender = sc.nextLine();
-                    System.out.println("Nhập vào số chứng minh nhân dân");
+                    System.out.println("Input Id Code");
                     String idCode = sc.nextLine();
-                    System.out.println("Nhập vào số điện thoại");
+                    System.out.println("Input phone number");
                     String phoneNumber = sc.nextLine();
-                    System.out.println("Nhập vào email");
+                    System.out.println("Input email");
                     String email = sc.nextLine();
-                    System.out.println("Nhập vào địa chỉ");
+                    System.out.println("Input address");
                     String address = sc.nextLine();
-                    System.out.println("Nhập vào loại khách");
+                    System.out.println("Input type of guest");
                     String typeOfGuest = sc.nextLine();
                     customerService.add(new Customer(id, name, dateOfBirth, gender, idCode, phoneNumber, email, address, typeOfGuest));
                     break;
                 case 3:
-                    System.out.println("Nhập vào mã khách hàng cần sửa");
+                    System.out.println("Input id change");
                     String idFix1 = sc.nextLine();
                     Customer customer = customerService.findCustomerById(idFix1);
                     if (customer != null) {
@@ -62,7 +62,12 @@ public class CustomerManagement {
                                 "9. Return main menu\n" +
                                 "-----------------\n" +
                                 "Input your choice");
-                        int choice1 = Integer.parseInt(sc.nextLine());
+                        int choice1 = 0;
+                        try {
+                            choice1 = Integer.parseInt(sc.nextLine());
+                        }catch (NumberFormatException e){
+                            e.printStackTrace();
+                        }
                         switch (choice1) {
                             case 1:
                                 System.out.println("Input name change");

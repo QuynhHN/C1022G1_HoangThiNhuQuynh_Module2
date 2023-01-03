@@ -53,13 +53,24 @@ public class Employee extends Person{
         this.salary = salary;
     }
 
+//    @Override
+//    public String toString() {
+//        return id +
+//                 super.toString() +
+//                "," + academicLevel +
+//                "," + position +
+//                "," + salary;
+//    }
+
+
     @Override
     public String toString() {
-        return id +
-                 super.toString() +
-                "," + academicLevel +
-                "," + position +
-                "," + salary;
+        return "Employee{" +
+                "id='" + id + '\'' + super.toString()+
+                ", academicLevel='" + academicLevel + '\'' +
+                ", position='" + position + '\'' +
+                ", salary='" + salary + '\'' +
+                "} " ;
     }
 
     public String formatCSVEmployee(){

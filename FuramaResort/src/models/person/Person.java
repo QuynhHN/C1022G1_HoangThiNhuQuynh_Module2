@@ -68,15 +68,28 @@ public class Person {
         this.email = email;
     }
 
+//    @Override
+//    public String toString() {
+//        return
+//               name +
+//                "," + dayOfBirth +
+//                "," + gender +
+//                "," + idCode +
+//                "," + phoneNumber +
+//                "," + email;
+//    }
+
+
     @Override
     public String toString() {
         return
-               name +
-                "," + dayOfBirth +
-                "," + gender +
-                "," + idCode +
-                "," + phoneNumber +
-                "," + email;
+                ", name='" + name + '\'' +
+                ", dayOfBirth='" + dayOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
+                ", idCode='" + idCode + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 
     public String convertLine(){

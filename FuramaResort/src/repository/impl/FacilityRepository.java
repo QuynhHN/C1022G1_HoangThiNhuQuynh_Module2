@@ -29,10 +29,10 @@ public class FacilityRepository implements IFacilityRepository {
         facilityIntegerRoom = ReadAndWriteRoom.readFile();
         facilityIntegerVilla = ReadAndWriteVilla.readFile();
         for (Map.Entry<Facility, Integer> entry : facilityIntegerRoom.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
+            System.out.println(entry.getKey() + " number of uses: "+ entry.getValue());
         }
         for (Map.Entry<Facility, Integer> entry : facilityIntegerVilla.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
+            System.out.println(entry.getKey() + " number of uses: " + entry.getValue());
         }
     }
 
@@ -56,13 +56,13 @@ public class FacilityRepository implements IFacilityRepository {
         facilityIntegerVilla = ReadAndWriteVilla.readFile();
         for (Map.Entry<Facility, Integer> entry : facilityIntegerRoom.entrySet()) {
             if (entry.getValue() >= 5) {
-                System.out.println(entry.getKey() + ":" + entry.getValue());
+                System.out.println(entry.getKey() + "number of uses:" + entry.getValue());
             }
 
         }
         for (Map.Entry<Facility, Integer> entry : facilityIntegerVilla.entrySet()) {
             if (entry.getValue() >= 5) {
-                System.out.println(entry.getKey() + ":" + entry.getValue());
+                System.out.println(entry.getKey() + "number of uses:" + entry.getValue());
             }
         }
     }

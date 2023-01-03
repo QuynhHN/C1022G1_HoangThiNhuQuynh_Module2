@@ -51,7 +51,7 @@ public class ReadAndWriteRoom {
             fileWriter = new FileWriter(FILE_PATH_ROOM);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Map.Entry<Facility, Integer> entryRoom : roomMap.entrySet()) {
-                bufferedWriter.write(entryRoom.getKey()+ "," + entryRoom.getValue());
+                bufferedWriter.write(entryRoom.getKey()+","+entryRoom.getValue());
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {

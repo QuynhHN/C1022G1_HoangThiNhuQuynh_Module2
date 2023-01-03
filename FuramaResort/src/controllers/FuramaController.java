@@ -10,7 +10,7 @@ public class FuramaController {
         FacilityManagement facilityManagement = new FacilityManagement();
         BookingManagement bookingManagement = new BookingManagement();
         PromotionManagement promotionManagement = new PromotionManagement();
-
+        int choice=0;
         do {
             System.out.println("-------Menu-------\n" +
                     "1. Employee Management\n" +
@@ -21,7 +21,12 @@ public class FuramaController {
                     "6. Exit" +
                     "-----------------\n" +
                     "Input your choice");
-            int choice = Integer.parseInt(sc.nextLine());
+            try {
+                choice = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                e.printStackTrace();
+            }
+
             switch (choice) {
                 case 1:
                     employeeManagement.displayMainMenuEmployee();
