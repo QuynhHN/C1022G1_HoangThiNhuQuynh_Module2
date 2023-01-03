@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="400ccda6-e9a9-4344-b3c0-fde4ce9fdcca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/string_and_regex/bai_tap/ClassName.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2IThzbroIfwISRmdyjBwJ6HCsu2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ss6.thuc_hanh.animal_interfaceadible" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ss12.bai_tap.arrayList_linkedList.arraylist.model.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\Desktop\CODEGYM\module_2\Module_2\src\ss16\io_text_file\bai_tap" />
+      <recent name="C:\Users\DELL\Desktop\CODEGYM\module_2\Module_2\src\ss16\io_text_file\bai_tap\copy_file_text" />
+      <recent name="C:\Users\DELL\Desktop\CODEGYM\module_2\Module_2\src\ss1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demoh">
+    <configuration name="ClassName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string_and_regex.bai_tap.ClassName" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string_and_regex.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demoh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="giai_thuat.Demoh" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="giai_thuat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string_and_regex.thuc_hanh.validate_email.EmailExample" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string_and_regex.thuc_hanh.validate_email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string_and_regex.thuc_hanh.validate_email.EmailExampleTest" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string_and_regex.thuc_hanh.validate_email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhoneNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string_and_regex.bai_tap.PhoneNumber" />
+      <module name="Module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string_and_regex.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demoh" />
+        <item itemvalue="Application.PhoneNumber" />
+        <item itemvalue="Application.ClassName" />
+        <item itemvalue="Application.EmailExampleTest" />
+        <item itemvalue="Application.EmailExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="400ccda6-e9a9-4344-b3c0-fde4ce9fdcca" name="Default Changelist" comment="" />
+      <created>1670211743236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670211743236</updated>
+      <workItem from="1670211745757" duration="32997000" />
+      <workItem from="1670312491890" duration="43854000" />
+      <workItem from="1670558915109" duration="2416000" />
+      <workItem from="1670564272388" duration="10606000" />
+      <workItem from="1670694732415" duration="52657000" />
+      <workItem from="1671078839958" duration="45029000" />
+      <workItem from="1671285693693" duration="31995000" />
+      <workItem from="1671503184448" duration="7307000" />
+      <workItem from="1671592969584" duration="13070000" />
+      <workItem from="1671680043608" duration="15645000" />
+      <workItem from="1671702505692" duration="4660000" />
+      <workItem from="1671717144985" duration="33152000" />
+      <workItem from="1672116300147" duration="7015000" />
+      <workItem from="1672152905360" duration="989000" />
+      <workItem from="1672198845890" duration="2083000" />
+      <workItem from="1672236978708" duration="675000" />
+      <workItem from="1672237680963" duration="46000" />
+      <workItem from="1672238065751" duration="929000" />
+      <workItem from="1672239120627" duration="1411000" />
+      <workItem from="1672386532259" duration="2873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="267" y="59" key="#Inspections" timestamp="1671279882505">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="267" y="59" key="#Inspections/0.0.1280.760@0.0.1280.760" timestamp="1671279882505" />
+    <state x="121" y="0" key="#Project_Structure" timestamp="1672238595162">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.760@0.0.1280.760" timestamp="1672238595162" />
+    <state x="96" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1670487726667">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="96" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1670487726667" />
+    <state x="403" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1671766700073">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="403" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1671766700073" />
+    <state x="446" y="82" key="#com.intellij.ide.util.MemberChooser" timestamp="1671784109212">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="446" y="82" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1671784109212" />
+    <state x="621" y="132" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1671258210437">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="621" y="132" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1280.760@0.0.1280.760" timestamp="1671258210437" />
+    <state x="254" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1671282435741">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="254" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.760@0.0.1280.760" timestamp="1671282435741" />
+    <state x="371" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1671259542415">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="371" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.760@0.0.1280.760" timestamp="1671259542415" />
+    <state x="419" y="139" key="#toString()_Generation_Settings" timestamp="1670702454794">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="419" y="139" key="#toString()_Generation_Settings/0.0.1280.760@0.0.1280.760" timestamp="1670702454794" />
+    <state x="421" y="135" key="FileChooserDialogImpl" timestamp="1672238583539">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1672238583539" />
+    <state width="1237" height="188" key="GridCell.Tab.0.bottom" timestamp="1672283552559">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1672283552559" />
+    <state width="1237" height="188" key="GridCell.Tab.0.center" timestamp="1672283552559">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1672283552559" />
+    <state width="1237" height="188" key="GridCell.Tab.0.left" timestamp="1672283552559">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1672283552559" />
+    <state width="1237" height="188" key="GridCell.Tab.0.right" timestamp="1672283552559">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1672283552559" />
+    <state width="1237" height="236" key="GridCell.Tab.1.bottom" timestamp="1671702466046">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="236" key="GridCell.Tab.1.bottom/0.0.1280.760@0.0.1280.760" timestamp="1671702466046" />
+    <state width="1237" height="236" key="GridCell.Tab.1.center" timestamp="1671702466046">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="236" key="GridCell.Tab.1.center/0.0.1280.760@0.0.1280.760" timestamp="1671702466046" />
+    <state width="1237" height="236" key="GridCell.Tab.1.left" timestamp="1671702466046">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="236" key="GridCell.Tab.1.left/0.0.1280.760@0.0.1280.760" timestamp="1671702466046" />
+    <state width="1237" height="236" key="GridCell.Tab.1.right" timestamp="1671702466046">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="236" key="GridCell.Tab.1.right/0.0.1280.760@0.0.1280.760" timestamp="1671702466046" />
+    <state x="374" y="83" key="RollbackChangesDialog" timestamp="1671720024170">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="374" y="83" key="RollbackChangesDialog/0.0.1280.760@0.0.1280.760" timestamp="1671720024170" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1672238957613">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1672238957613" />
+    <state x="440" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1670833362128">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="440" y="28" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.760@0.0.1280.760" timestamp="1670833362128" />
+    <state x="401" y="194" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1670835136986">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="401" y="194" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.760@0.0.1280.760" timestamp="1670835136986" />
+    <state x="442" y="0" key="editAsTableFormatDialogDimension" timestamp="1671720010902">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="442" y="0" key="editAsTableFormatDialogDimension/0.0.1280.760@0.0.1280.760" timestamp="1671720010902" />
+    <state x="371" y="142" key="extract.method.dialog" timestamp="1671509578496">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="371" y="142" key="extract.method.dialog/0.0.1280.760@0.0.1280.760" timestamp="1671509578496" />
+    <state x="91" y="1" key="new project wizard" timestamp="1671466914208">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="91" y="1" key="new project wizard/0.0.1280.760@0.0.1280.760" timestamp="1671466914208" />
+    <state x="642" y="91" key="refactoring.ChangeSignatureDialog" timestamp="1671284963108">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="642" y="91" key="refactoring.ChangeSignatureDialog/0.0.1280.760@0.0.1280.760" timestamp="1671284963108" />
+    <state x="297" y="171" key="run.anything.popup" timestamp="1670568048914">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="297" y="171" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1670568048914" />
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1671767856400">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1671767856400" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Module_2$CountCharCoppyFile.ic" NAME="CountCharCoppyFile Coverage Results" MODIFIED="1671701623633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ss16.io_text_file.bai_tap.copy_file_text.*</FILTER>
+    </SUITE>
+  </component>
+</project>
