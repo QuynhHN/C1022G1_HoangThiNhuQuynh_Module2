@@ -21,4 +21,5 @@ public class Room extends Facility {
         return super.toString() +
                 "," + freeService;
     }
+
 }
