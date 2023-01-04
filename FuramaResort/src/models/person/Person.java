@@ -68,17 +68,6 @@ public class Person {
         this.email = email;
     }
 
-//    @Override
-//    public String toString() {
-//        return
-//               name +
-//                "," + dayOfBirth +
-//                "," + gender +
-//                "," + idCode +
-//                "," + phoneNumber +
-//                "," + email;
-//    }
-
 
     @Override
     public String toString() {

@@ -67,15 +67,21 @@ public class Facility {
         this.rentalType = rentalType;
     }
 
+
     @Override
     public String toString() {
-        return
-                serviceName +
-                        "," + name +
-                        "," + usableArea +
-                        "," + rentalCosts +
-                        "," + maximumNumberOfPeople +
-                        "," + rentalType;
+        return "Facility{" +
+                "serviceName='" + serviceName + '\'' +
+                ", name='" + name + '\'' +
+                ", usableArea='" + usableArea + '\'' +
+                ", rentalCosts='" + rentalCosts + '\'' +
+                ", maximumNumberOfPeople='" + maximumNumberOfPeople + '\'' +
+                ", rentalType='" + rentalType + '\'' +
+                '}';
     }
 
+    public String     convertLineFacility() {
+        final String COMMA = ",";
+        return this.serviceName + COMMA + this.name + COMMA + this.usableArea + COMMA + this.rentalType + COMMA + this.maximumNumberOfPeople + COMMA + this.rentalType;
+    }
 }

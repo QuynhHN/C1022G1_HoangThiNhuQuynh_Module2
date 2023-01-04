@@ -52,7 +52,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input new name service ");
                                 newServiceNameVilla = sc.nextLine();
-                                if (!newServiceNameVilla.matches(Regex.REGEX_NAME)) {
+                                if (!newServiceNameVilla.matches(Regex.REGEX_VILLA_NAME)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newServiceNameVilla.matches(Regex.REGEX_VILLA_NAME));
@@ -70,7 +70,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input new usable area");
                                 newUsableArea = sc.nextLine();
-                                if (!newUsableArea.matches(Regex.REGEX_NAME)) {
+                                if (!newUsableArea.matches(Regex.REGEX_AREA)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newUsableArea.matches(Regex.REGEX_AREA));
@@ -79,7 +79,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input rental costs");
                                 newRentalCosts = sc.nextLine();
-                                if (!newRentalCosts.matches(Regex.REGEX_NAME)) {
+                                if (!newRentalCosts.matches(Regex.REGEX_RENTAL_COSTS)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newRentalCosts.matches(Regex.REGEX_RENTAL_COSTS));
@@ -88,7 +88,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input maximum number of people");
                                 newMaximumNumberOfPeople = sc.nextLine();
-                                if (!newMaximumNumberOfPeople.matches(Regex.REGEX_NAME)) {
+                                if (!newMaximumNumberOfPeople.matches(Regex.REGEX_MAX_PEOPLE)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newMaximumNumberOfPeople.matches(Regex.REGEX_MAX_PEOPLE));
@@ -97,7 +97,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input rental type");
                                 newRentalType = sc.nextLine();
-                                if (!newRentalType.matches(Regex.REGEX_NAME)) {
+                                if (!newRentalType.matches(Regex.REGEX_RENTAL_TYPE)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newRentalType.matches(Regex.REGEX_RENTAL_TYPE));
@@ -106,16 +106,16 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input room standard");
                                 newRoomStandard = sc.nextLine();
-                                if (!newRoomStandard.matches(Regex.REGEX_NAME)) {
+                                if (!newRoomStandard.matches(Regex.REGEX_ROOM_STANDARD)) {
                                     System.err.println("Please input again");
                                 }
-                            } while (newRoomStandard.matches(Regex.REGEX_ROOM_STANDARD));
+                            } while (!newRoomStandard.matches(Regex.REGEX_ROOM_STANDARD));
 
                             String newPoolArea;
                             do {
                                 System.out.println("Input pool area");
                                 newPoolArea = sc.nextLine();
-                                if (!newPoolArea.matches(Regex.REGEX_NAME)) {
+                                if (!newPoolArea.matches(Regex.REGEX_AREA)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newPoolArea.matches(Regex.REGEX_AREA));
@@ -124,7 +124,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input number of floors");
                                 newNumberOfFloors = sc.nextLine();
-                                if (!newNumberOfFloors.matches(Regex.REGEX_NAME)) {
+                                if (!newNumberOfFloors.matches(Regex.REGEX_NUMBER_OF_FLOORS)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newNumberOfFloors.matches(Regex.REGEX_NUMBER_OF_FLOORS));
@@ -139,7 +139,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input new name service");
                                 newServiceName = sc.nextLine();
-                                if (!newServiceName.matches(Regex.REGEX_NAME)) {
+                                if (!newServiceName.matches(Regex.REGEX_ROOM_NAME)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newServiceName.matches(Regex.REGEX_ROOM_NAME));
@@ -157,7 +157,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input new usable area");
                                 newUsableAreaRoom = sc.nextLine();
-                                if (!newUsableAreaRoom.matches(Regex.REGEX_NAME)) {
+                                if (!newUsableAreaRoom.matches(Regex.REGEX_AREA)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newUsableAreaRoom.matches(Regex.REGEX_AREA));
@@ -166,7 +166,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println(" Input rental costs");
                                 newRentalCostsRoom = sc.nextLine();
-                                if (!newRentalCostsRoom.matches(Regex.REGEX_NAME)) {
+                                if (!newRentalCostsRoom.matches(Regex.REGEX_RENTAL_COSTS)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newRentalCostsRoom.matches(Regex.REGEX_RENTAL_COSTS));
@@ -175,7 +175,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input maximum number of people");
                                 newMaximumNumberOfPeopleRoom = sc.nextLine();
-                                if (!newMaximumNumberOfPeopleRoom.matches(Regex.REGEX_NAME)) {
+                                if (!newMaximumNumberOfPeopleRoom.matches(Regex.REGEX_MAX_PEOPLE)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newMaximumNumberOfPeopleRoom.matches(Regex.REGEX_MAX_PEOPLE));
@@ -184,7 +184,7 @@ public class FacilityManagement {
                             do {
                                 System.out.println("Input rental type");
                                 newRentalTypeRoom = sc.nextLine();
-                                if (!newRentalTypeRoom.matches(Regex.REGEX_NAME)) {
+                                if (!newRentalTypeRoom.matches(Regex.REGEX_RENTAL_TYPE)) {
                                     System.err.println("Please input again");
                                 }
                             } while (!newRentalTypeRoom.matches((Regex.REGEX_RENTAL_TYPE)));

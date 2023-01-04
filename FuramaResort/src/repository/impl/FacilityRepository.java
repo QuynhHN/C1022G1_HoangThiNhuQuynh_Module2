@@ -12,8 +12,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FacilityRepository implements IFacilityRepository {
-    static Map<Facility, Integer> facilityIntegerRoom = new LinkedHashMap<>();
-    static Map<Facility, Integer> facilityIntegerVilla = new LinkedHashMap<>();
+//    static Map<Facility, Integer> facilityIntegerRoom = new LinkedHashMap<>();
+//    static Map<Facility, Integer> facilityIntegerVilla = new LinkedHashMap<>();
 
 //    static {
 //        facilityIntegerRoom.put(new Room("SVRO-0012", "Big room", "60.0", "3000000", "6", "Day", "Breakfast"), 4);
@@ -26,8 +26,8 @@ public class FacilityRepository implements IFacilityRepository {
 
     @Override
     public void display() {
-        facilityIntegerRoom = ReadAndWriteRoom.readFile();
-        facilityIntegerVilla = ReadAndWriteVilla.readFile();
+        Map<Facility, Integer> facilityIntegerRoom = ReadAndWriteRoom.readFile();
+        Map<Facility, Integer> facilityIntegerVilla = ReadAndWriteVilla.readFile();
         for (Map.Entry<Facility, Integer> entry : facilityIntegerRoom.entrySet()) {
             System.out.println(entry.getKey() + " number of uses: "+ entry.getValue());
         }
@@ -38,22 +38,22 @@ public class FacilityRepository implements IFacilityRepository {
 
     @Override
     public void addRoom(Facility room, int numberOfUses) {
-        facilityIntegerRoom = ReadAndWriteRoom.readFile();
+        Map<Facility, Integer> facilityIntegerRoom = new LinkedHashMap<>();
         facilityIntegerRoom.put(room, numberOfUses);
         ReadAndWriteRoom.writeFile(facilityIntegerRoom);
     }
 
     @Override
     public void addVilla(Facility villa, int numberOfUses) {
-        facilityIntegerVilla = ReadAndWriteVilla.readFile();
+        Map<Facility, Integer> facilityIntegerVilla = new LinkedHashMap<>();
         facilityIntegerVilla.put(villa, numberOfUses);
         ReadAndWriteVilla.writeFile(facilityIntegerVilla);
     }
 
     @Override
     public void displayListFacilityMaintenance() {
-        facilityIntegerRoom = ReadAndWriteRoom.readFile();
-        facilityIntegerVilla = ReadAndWriteVilla.readFile();
+        Map<Facility, Integer>facilityIntegerRoom = ReadAndWriteRoom.readFile();
+        Map<Facility, Integer> facilityIntegerVilla = ReadAndWriteVilla.readFile();
         for (Map.Entry<Facility, Integer> entry : facilityIntegerRoom.entrySet()) {
             if (entry.getValue() >= 5) {
                 System.out.println(entry.getKey() + "number of uses:" + entry.getValue());

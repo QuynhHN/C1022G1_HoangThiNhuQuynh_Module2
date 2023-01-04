@@ -45,14 +45,16 @@ public class ReadAndWriteRoom {
     }
 
     public static void writeFile(Map<Facility, Integer> roomMap) {
-        FileWriter fileWriter = null;
+        FileWriter fileWriter;
         BufferedWriter bufferedWriter = null;
         try {
-            fileWriter = new FileWriter(FILE_PATH_ROOM);
+            fileWriter = new FileWriter(FILE_PATH_ROOM,true);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Map.Entry<Facility, Integer> entryRoom : roomMap.entrySet()) {
-                bufferedWriter.write(entryRoom.getKey()+","+entryRoom.getValue());
-                bufferedWriter.newLine();
+                if(entryRoom.getKey() instanceof Room) {
+                    bufferedWriter.write(((Room) entryRoom.getKey()).formatCSVRoom() + "," + entryRoom.getValue());
+                    bufferedWriter.newLine();
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();

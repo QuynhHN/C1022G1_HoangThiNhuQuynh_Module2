@@ -38,11 +38,19 @@ public class Villa extends Facility {
         this.numberOfFloors = numberOfFloors;
     }
 
+
+
     @Override
     public String toString() {
-        return super.toString() +
-                "," + roomStandard +
-                "," + poolArea +
-                "," + numberOfFloors;
+        return "Villa{" + super.toString()+
+                "roomStandard='" + roomStandard + '\'' +
+                ", poolArea='" + poolArea + '\'' +
+                ", numberOfFloors='" + numberOfFloors + '\'' +
+                "} " ;
+    }
+
+    public String formatCSVVilla(){
+        final String COMMA=",";
+        return super.convertLineFacility()+COMMA+roomStandard+COMMA+poolArea+COMMA+numberOfFloors;
     }
 }

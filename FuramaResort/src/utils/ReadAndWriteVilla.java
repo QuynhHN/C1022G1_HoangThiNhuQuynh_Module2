@@ -52,11 +52,13 @@ public class ReadAndWriteVilla {
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
-            fileWriter = new FileWriter(FILE_PATH);
+            fileWriter = new FileWriter(FILE_PATH,true);
             bufferedWriter = new BufferedWriter(fileWriter);
             for (Map.Entry<Facility, Integer> entry : villaMap.entrySet()) {
-                bufferedWriter.write(entry.getKey()+ "," + entry.getValue());
-                bufferedWriter.newLine();
+                if(entry.getKey() instanceof Villa) {
+                    bufferedWriter.write(((Villa) entry.getKey()).formatCSVVilla() + "," + entry.getValue());
+                    bufferedWriter.newLine();
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
